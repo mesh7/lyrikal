@@ -46,6 +46,8 @@ body {
 .content_three {
   display: flex;
   justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .footer {
