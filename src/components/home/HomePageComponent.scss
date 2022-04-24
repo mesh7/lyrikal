@@ -47,11 +47,6 @@
     background: blanchedalmond;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-}
-
 .content {
     margin: 10rem auto 4rem auto;
 }
@@ -75,12 +70,6 @@
     margin-bottom: 2rem;
 }
 
-.footer {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
 .content_card {
     min-height: 30rem;
     margin-bottom: 2.5rem;
@@ -92,22 +81,6 @@
     background-position: 100% 50%;
     background-size: 520px;
     background-repeat: no-repeat;
-}
-
-.sign-in-button {
-    border: none;
-    height: 2.5rem;
-    width: 6rem;
-    border-radius: 7rem;
-    padding: 0 1rem;
-    color: white;
-    background-color: black;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;
-    margin: 0.25rem 0.125rem;
-    cursor: pointer;
 }
 
 .button {

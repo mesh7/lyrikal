@@ -1,8 +1,17 @@
 <template>
   <div class="header">
-    <div class="header__item">
-      <u>This is header component</u>
+    <div>
+      <div href="#home">Home</div>
+      <div class="search-bar">
+        <input
+          type="text"
+          placeholder="Type song title, artist or lyrics"
+          name="search"
+        />
+      </div>
     </div>
+    <div class="sign-in-button" href="#contact">Sign in</div>
+    <div href="#about">About</div>
   </div>
 </template>
 
