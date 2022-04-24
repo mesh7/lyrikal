@@ -44,7 +44,7 @@
           <button class="button">Button</button>
         </div>
       </div>
-      <button id="get-btn">Get button</button>
+      <button @click="getTracks()">Get button</button>
     </div>
     <div class="footer">
       <div class="footer__item" @click="redirect('contact')">
@@ -59,14 +59,32 @@
 
 <script>
 import "./HomePageComponent.scss";
+import axios from 'axios';
 
 export default {
   name: "HomePageComponent",
   methods: {
-    created() {},
+    created() {
+       console.log("created");
+    },
 
-    getStarted() {
-      console.log("hello");
+    getTracks() {
+      console.log("Hello")
+      var url = "https://api.musixmatch.com/ws/1.1/";
+      const key = "3caa49624d2a1784e8ba3e886b29f346";
+      const country = "us";
+      const size = 10;
+      const query =
+        "chart.tracks.get?apikey=API_KEY&page=1&page_size=_SIZE_&country=COUNTRY_NAME";
+      url =
+        url +
+        query
+          .replace("_SIZE_", size)
+          .replace("COUNTRY_NAME", country)
+          .replace("API_KEY", key);
+      axios.get(url).then((response) => {
+        console.log(response);
+      });
     },
   },
 };

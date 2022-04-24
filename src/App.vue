@@ -1,16 +1,22 @@
 <template>
   <div id="app">
+    <HeaderComponent />
     <HomePageComponent />
+    <FooterComponent />
   </div>
 </template>
 
 <script>
+import HeaderComponent from "./components/header/HeaderComponent.vue";
 import HomePageComponent from "./components/home/HomePageComponent.vue";
+import FooterComponent from "./components/footer/FooterComponent.vue";
 
 export default {
   name: "App",
   components: {
+    HeaderComponent,
     HomePageComponent,
+    FooterComponent,
   },
 };
 </script>
