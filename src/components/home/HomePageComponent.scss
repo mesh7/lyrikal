@@ -1,0 +1,142 @@
+.content {
+    margin-top: 100px;
+}
+
+.logo {
+    height: 120px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        height: 60px;
+    }
+}
+
+.main-title {
+    margin-top: 20px;
+    margin-bottom: 60px;
+
+    &__one {
+        margin: 4px 0;
+        font-size: 20px;
+        color: white;
+    }
+}
+
+.get-started-button {
+    height: 60px;
+    width: 200px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-decoration: none;
+    background: #659bdc;
+    border-radius: 32px;
+    cursor: pointer;
+
+    &__text {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 20px;
+        color: white;
+    }
+}
+
+.get-started-button:hover {
+    background: blanchedalmond;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    margin: 10rem auto 4rem auto;
+}
+
+.content_one {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.content_two {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.content_three {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.content_card {
+    min-height: 30rem;
+    margin-bottom: 2.5rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 1rem;
+    background-color: #d7e4ff;
+    background-image: url(https://assets-global.website-files.com/5c5b0a0…/5fae62a…_community-card.png);
+    background-position: 100% 50%;
+    background-size: 520px;
+    background-repeat: no-repeat;
+}
+
+.sign-in-button {
+    border: none;
+    height: 2.5rem;
+    width: 6rem;
+    border-radius: 7rem;
+    padding: 0 1rem;
+    color: white;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.25rem 0.125rem;
+    cursor: pointer;
+}
+
+.button {
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: black;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.25rem 0.125rem;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 360px;
+
+    &__item {
+        margin: 16px;
+        font-size: 16px;
+        color: white;
+    }
+
+    :hover {
+        cursor: pointer;
+        color: black;
+    }
+}

@@ -1,21 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lyrikal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
+<template>
+  <div class="home-component">
     <div class="container">
       <div class="header">
         <div>
@@ -61,11 +45,32 @@
         </div>
       </div>
       <button id="get-btn">Get button</button>
-      <div class="footer">
-        <div class="contact">Contact</div>
-        <div class="footer">Support</div>
+    </div>
+    <div class="footer">
+      <div class="footer__item" @click="redirect('contact')">
+        <u>Contact</u>
+      </div>
+      <div class="footer__item" @click="redirect('support')">
+        <u>Support</u>
       </div>
     </div>
-    <script src="app.js"></script>
-  </body>
-</html>
+  </div>
+</template>
+
+<script>
+import "./HomePageComponent.scss";
+
+export default {
+  name: "HomePageComponent",
+  methods: {
+    created() {},
+
+    getStarted() {
+      console.log("hello");
+    },
+  },
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style lang="sass" scoped></style>
